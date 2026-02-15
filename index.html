@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-ToDo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="elementsHolder">
+        <div class="tabHolder">
+            <div class="foldersTab">
+                <div class="Header">Folders</div>
+                <div class="folderList">
+                </div>
+                <input type="text" class="folderInput" placeholder="+ Add new folder"
+                    onkeydown="pressEnterFolder(event, value)">
+            </div>
+            <div class="taskTab">
+                <div class="Header">Tasks</div>
+                <hr class="division">
+                <div>
+                    <div class="taskList">
+                    </div>
+                    <div class="taskDiv"></div>
+                </div>
+                <div>
+                    <h1 class="completedTaskHeader">Completed</h1>
+                    <div class="completedTaskList"></div>
+                </div>
+            </div>
+            <div class="taskDetails">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

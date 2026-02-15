@@ -1,0 +1,292 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.elementsHolder {
+    width: 79%;
+    margin: auto;
+    height: 890px;
+    background-color: white;
+    border-radius: 20px;
+    background-color: #1E1E1E;
+}
+
+.tabHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foldersTab {
+    background-color: #1E1E1E;
+    width: 388px;
+    height: 890px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.taskTab {
+    background-color: #262626;
+    width: 700px;
+    height: 890px;
+}
+
+.taskDetails {
+    background-color: #1E1E1E;
+    border-radius: 0px 20px 20px 0px;
+    width: 440px;
+    height: 890px;
+}
+
+.Header {
+    height: 70px;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 15px 0px 50px 25px;
+    color: #E0E0E0;
+}
+
+.folderList {
+    width: 290px;
+    margin: 0 auto;
+}
+
+.folderInput {
+    width: 270px;
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    background-color: #1E1E1E;
+    color: #A0A0A0;
+}
+
+.folderInput:focus {
+    outline: none;
+}
+
+.folderItem {
+    width: 270px;
+    min-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.folderItem:hover {
+    width: 270px;
+    min-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.folderName {
+    width: 250px;
+    overflow: hidden;
+}
+
+.taskCount {
+    width: 40px;
+    background-color: #A0A0A0;
+    text-align: center;
+    border-radius: 20px;
+    color: #1E1E1E;
+}
+
+.division {
+    width: 650px;
+    margin-bottom: 30px;
+}
+
+.taskItem {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.taskDivision {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.taskInput {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+    background-color: #262626;
+    color: #A0A0A0;
+}
+
+.taskInput:focus {
+    outline: none;
+}
+
+.checkText {
+    display: flex;
+    width: max-content;
+    max-width: 450px;
+    align-items: center;
+}
+
+.taskHeader {
+    height: 90px;
+    font-size: 24px;
+    font-weight: 1000px;
+    margin: 20px 0px 20px 20px;
+    color: #E0E0E0;
+}
+
+.taskDescription {
+    width: 400px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+    background-color: #262626;
+    color: #E0E0E0;
+    resize: none;
+}
+
+.taskDescription:focus {
+    outline: none;
+}
+
+.subtaskItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subtaskDivision {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.subtaskDiv {
+    margin-top: 20px;
+    width: 420px;
+    margin: 30px auto;
+}
+
+.taskDateCreated {
+    width: 408px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #A0A0A0;
+}
+
+.dueDiv {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    color: #E0E0E0;
+}
+
+.subtaskInput {
+    width: 412px;
+    height: 40px;
+    background-color: #1E1E1E;
+    color: #A0A0A0;
+}
+
+.subtaskInput:focus {
+    outline: none;
+}
+
+.completedTaskHeader {
+    font-size: 30px;
+    margin-left: 20px;
+    color: #E0E0E0;
+}
+
+.subtaskHeader {
+    color: #E0E0E0;
+}
+
+.completedSubtaskHeader {
+    color: #E0E0E0;
+}
+
+.taskItem {
+    color: #E0E0E0
+}
+
+.subtaskItem {
+    color: #E0E0E0
+}
+
+.checkbox {
+    /* 1. Remove default browser styles */
+    appearance: none;
+    -webkit-appearance: none;
+    /* Safari support */
+
+    /* 2. Define dimensions */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    /* 3. Make it a circle */
+    border-radius: 50%;
+    border: 2px solid #ccc;
+
+    /* 4. Center the checkmark icon */
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease-in-out;
+    margin: 3px 10px 3px 4px;
+}
+
+/* Hover state */
+.circle-checkbox:hover {
+    border-color: #6200ea;
+}
+
+/* Checked state */
+.checkbox:checked {
+    background-color: #6200ea;
+    /* Brand color */
+    border-color: #6200ea;
+}
+
+/* The Checkmark (Hidden by default, shown when checked) */
+.checkbox::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    /* Start hidden */
+    transition: 0.1s transform ease-in-out;
+
+    /* Create a white checkmark using box-shadow or a background image */
+    /* Simplest method: A CSS 'L' shape rotated */
+    box-shadow: inset 2px -2px 0 white;
+    transform-origin: center;
+    transform: rotate(45deg) scale(0);
+}
+
+.checkbox:checked::before {
+    /* Reveal the checkmark */
+    transform: rotate(45deg) scale(1);
+}
